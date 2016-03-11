@@ -9,6 +9,15 @@
     - make the class question-text have red text
     - give the class answer 25 pixels of padding
   */
+  body {
+    background: pink;
+    color: red;
+  }
+
+  .answer {
+    padding: 25px;
+  }
+
   </style>
 </head>
 <body>
@@ -44,6 +53,20 @@
     // Loop through the list and console.log each
     // Create an object with key value pairs for your name, former occupation and age
     // assign the object to a variable
+
+    var testArray = ['Jenny', true, 27];
+
+    for (var i = 0; i < testArray.length; i++) {
+      console.log(testArray[i]);
+    }
+
+    var testObject = {
+      name: 'Jenny',
+      formerOccupation: 'teacher',
+      age: 27,
+    }
+
+    console.log(testObject);
   </script>
 </body>
 </html>
