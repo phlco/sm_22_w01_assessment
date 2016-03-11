@@ -4,11 +4,19 @@
   <title></title>
   <style>
   /* CSS */
-  /*   Write CSS here to
-    - make the class instructions have a pink background
-    - make the class question-text have red text
-    - give the class answer 25 pixels of padding
-  */
+   /*  Write CSS here to
+    - make the class instructions have a pink background*/
+    .instructions {
+      background: pink;
+    }
+    /*- make the class question-text have red text*/
+    .question-text {
+      color: red;
+    }
+    /*- give the class answer 25 pixels of padding*/
+    .answer {
+      padding: 25px;
+    }
   </style>
 </head>
 <body>
@@ -21,15 +29,21 @@
   <section class="assessment">
     <div class="question" id="bash">
       <p class="question-text">
-        Write out the bash commands to
-          - create a new directory in your home directory called "titantic"
-          - initalize a new git repository inside "titanic"
-          - create a new file called readme.md
-          - add readme.md to git's staging area
-          - commit the work to git
+        <ol>Write out the bash commands to
+          <li> create a new directory in your home directory called "titantic"</li>
+          <li> initalize a new git repository inside "titanic"</li>
+          <li> create a new file called readme.md</li>
+          <li> add readme.md to git's staging area</li>
+          <li> commit the work to git</li>
+        </ol>
       </p>
       <code class="answer">
-
+        -mkdir "titanic"
+        -cd titatnic
+        -git init
+        -touch readme.md
+        -git add readme.md
+        -git commit -m "initial commit"
       </code>
     </div>
     <div class="question" id="bash">
@@ -41,8 +55,17 @@
   <script>
     // JavaScript
     // Create an array containing a string, a boolean, and a number
+    var data = ["string", true, 42];
     // Loop through the list and console.log each
+    for(var i=0; i<data.length; i++){
+      console.log(data[i]);
+    };
     // Create an object with key value pairs for your name, former occupation and age
+    var mattp = {
+      name: "Matt Parvinsmith",
+      formerJob: "actor",
+      age: 23
+    };
     // assign the object to a variable
   </script>
 </body>
