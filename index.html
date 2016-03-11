@@ -3,7 +3,22 @@
 <head>
   <title></title>
   <style>
-  /* CSS */
+
+
+.instructions {
+  background: pink
+}
+
+.question-text {
+  color: red;
+}
+
+.answer {
+  padding: 25px;
+}
+
+
+
   /*   Write CSS here to
     - make the class instructions have a pink background
     - make the class question-text have red text
@@ -29,7 +44,13 @@
           - commit the work to git
       </p>
       <code class="answer">
-
+        <ol>
+          <li>mkdir ~/titanic</li>
+          <li>git init /titanic</li>
+          <li>touch readme.md /titanic</li>
+          <li>git add titanic/readme.md</li>
+          <li>git commit -m "commited to git"</li>
+        </ol>
       </code>
     </div>
     <div class="question" id="bash">
@@ -44,6 +65,24 @@
     // Loop through the list and console.log each
     // Create an object with key value pairs for your name, former occupation and age
     // assign the object to a variable
+    var array = ['string', (7 === 7), 7];
+
+    for(i = 0; i < array.length; i++) {
+      console.log(array);
+    }
+    // fuzzy on listing each out outside of printing it as an array.
+
+    var adamObject = {
+       name : 'Adam Wright',
+       formerOccupation : 'UXD',
+       age : 42
+     }
+
+    var adamObject = adam
+// This one was a little fuzzy... I know it's simple, but for some reason blanked on it.
+// My biggest issues are around remembering syntax and applying that syntax to the problems.
+ // I mostly understand the concepts, but applying them to the right syntax is challenging.
+
   </script>
 </body>
 </html>
