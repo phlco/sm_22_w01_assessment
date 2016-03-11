@@ -2,7 +2,9 @@
 <html>
 <head>
   <title></title>
-  <style>
+  <style> background: pink;
+          class question-text = font-color: red;
+          class answer = padding: 25px;
   /* CSS */
   /*   Write CSS here to
     - make the class instructions have a pink background
@@ -23,10 +25,17 @@
       <p class="question-text">
         Write out the bash commands to
           - create a new directory in your home directory called "titantic"
+          ~
+          mkdir titanic
           - initalize a new git repository inside "titanic"
+          cd titanic
+          git init
           - create a new file called readme.md
+          touch readme.md
           - add readme.md to git's staging area
+          git add .
           - commit the work to git
+          git commit -m "explain specifically what changes you are saving"
       </p>
       <code class="answer">
 
@@ -47,3 +56,6 @@
   </script>
 </body>
 </html>
+//I am generally feeling like I am behind and slow overall but I am realizing that every day I am able to
+work on concepts/syntax I had never seen or known how to use before...baby steps? The visual examples
+are helping me the most and the hands on exercises.
