@@ -9,6 +9,17 @@
     - make the class question-text have red text
     - give the class answer 25 pixels of padding
   */
+  .instructions {
+    background-color: pink;
+  }
+
+  .question {
+    color: red;
+  }
+
+  .answer {
+    padding: 25px;
+  }
   </style>
 </head>
 <body>
@@ -22,11 +33,15 @@
     <div class="question" id="bash">
       <p class="question-text">
         Write out the bash commands to
-          - create a new directory in your home directory called "titantic"
-          - initalize a new git repository inside "titanic"
-          - create a new file called readme.md
-          - add readme.md to git's staging area
-          - commit the work to git
+
+        <ol>
+          <li>create a new directory in your home directory called "titantic" -- <code>mkdir titanic</code></li>
+          <li>initalize a new git repository inside "titanic" -- <code>git init</code></li>
+          <li>create a new file called readme.md -- <code>touch readme.md</code></li>
+          <li>add readme.md to git's staging area <code>git add readme.md</code></li>
+          <li>commit the work to git <code>git commit -m 'Initial commit'</code></li>
+        </ol>
+
       </p>
       <code class="answer">
 
@@ -44,6 +59,21 @@
     // Loop through the list and console.log each
     // Create an object with key value pairs for your name, former occupation and age
     // assign the object to a variable
+
+    var labArray = ["Erik", true, 90];
+    for (var i = 0; i < labArray.length; i++) {
+      console.log(labArray[i]);
+    }
+
+    var aboutMe = {
+      name: "Erik Gomez",
+      formerOccupation: "Project Coordinator",
+      age: 26
+    }
+    for (var key in aboutMe) {
+      console.log(aboutMe[key]); // prints out all the keys inside aboutMe
+    }
+
   </script>
 </body>
 </html>
