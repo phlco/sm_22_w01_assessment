@@ -1,5 +1,21 @@
 <!DOCTYPE html>
 <html>
+
+
+<!-- Open this repo in Sublime
+- Take a look at `index.html`
+- Update the CSS
+- Update the JavaScript
+- Update the HTML
+- Answer the git questions
+
+> If you can't complete any part, leave a comment about what your thinking is!
+
+# Finally!
+
+- Commit your work
+- Upload your changes back to github
+- [File a pull request!](https://help.github.com/articles/creating-a-pull-request/) -->
 <head>
   <title></title>
   <style>
@@ -8,7 +24,21 @@
     - make the class instructions have a pink background
     - make the class question-text have red text
     - give the class answer 25 pixels of padding
-  */
+*/
+
+    .instructions {
+      background: pink;
+      text: red;
+    }
+
+    .questions {
+     text: red;
+    }
+
+    .answer {
+      padding: 25px;
+    }
+
   </style>
 </head>
 <body>
@@ -21,15 +51,22 @@
   <section class="assessment">
     <div class="question" id="bash">
       <p class="question-text">
-        Write out the bash commands to
-          - create a new directory in your home directory called "titantic"
-          - initalize a new git repository inside "titanic"
-          - create a new file called readme.md
-          - add readme.md to git's staging area
-          - commit the work to git
+        <ul>Write out the bash commands to
+          <li>- create a new directory in your home directory called "titantic"</li>
+          <li>- initalize a new git repository inside "titanic"</li>
+          <li>- create a new file called readme.md</li>
+          <li>- add readme.md to git's staging area</li>
+          <li>- commit the work to git</li>
+        </ul>
       </p>
       <code class="answer">
-
+        cd ~/titanic
+        mkdir titanic
+        cd titanic
+        touch readme.me
+        git init
+        git add -A
+        git push origin master
       </code>
     </div>
     <div class="question" id="bash">
@@ -44,6 +81,21 @@
     // Loop through the list and console.log each
     // Create an object with key value pairs for your name, former occupation and age
     // assign the object to a variable
+    var multiTypes = [ "string", true, 30];
+
+    for( var i = 0; i < multiTypes.length; i++) {
+      var type = multiTypes[1];
+      console.log(type);
+    };
+
+
   </script>
 </body>
 </html>
+
+
+<!-- currently got stuck on js loop. probably dont need line 87, or var type
+got stuck on object literals and chaining last night. some of my console logs
+were not working.
+felt good on weds night. didnt feel great tues night but still came in and finished
+next morening, which contrasted from this morning. i couldnt finish the hw. -->
