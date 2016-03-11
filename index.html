@@ -3,6 +3,15 @@
 <head>
   <title></title>
   <style>
+  .instructions {
+    background: pink;
+  }
+  .question-text {
+    color: red;
+  }
+  .answer {
+    padding: 25px;
+  }
   /* CSS */
   /*   Write CSS here to
     - make the class instructions have a pink background
@@ -22,15 +31,32 @@
     <div class="question" id="bash">
       <p class="question-text">
         Write out the bash commands to
-          - create a new directory in your home directory called "titantic"
-          - initalize a new git repository inside "titanic"
-          - create a new file called readme.md
-          - add readme.md to git's staging area
-          - commit the work to git
+        <ol>
+           <li>create a new directory in your home directory called "titantic"</li>
+           <li>initalize a new git repository inside "titanic"</li>
+           <li>create a new file called readme.md</li>
+           <li>add readme.md to git's staging area</li>
+           <li>commit the work to git</li>
+        </ol>
       </p>
       <code class="answer">
-
+         <ol>
+           <li>create a new directory in your home directory called "titantic"</li>
+           <li>initalize a new git repository inside "titanic"</li>
+           <li>create a new file called readme.md</li>
+           <li>add readme.md to git's staging area</li>
+           <li>commit the work to git</li>
+        </ol>
       </code>
+      <code class ="answer">
+        cd ~ <br/>
+        mkdir titanic<br/>
+        git init<br/>
+        touch readme.md<br/>
+        add readme.md<br/>
+        git commit -m "initial commit" -m "created readme.md"<br/>
+      </code>
+
     </div>
     <div class="question" id="bash">
       <p class="question-text">
@@ -39,6 +65,19 @@
     </div>
   </section>
   <script>
+    var assessArray = ["Evan's birthday is March 30th", true, 34];
+    for (var index =0; index<assessArray.length; index++) {
+      console.log(assessArray[index]);
+    }
+
+    var Evan = {
+      name: 'Evan Justin Washington',
+      formerly: ['Massage Therapist', 'Sheet Metal Worker', 'Fire Control Technician', 'Sales Associate'],
+      age: '33.94'
+    }
+
+    var EJW = Evan;
+
     // JavaScript
     // Create an array containing a string, a boolean, and a number
     // Loop through the list and console.log each
