@@ -6,8 +6,18 @@
   /* CSS */
   /*   Write CSS here to
     - make the class instructions have a pink background
+    .instructions {
+    background-color: pink;
+  }
     - make the class question-text have red text
+    .question-text {
+
+  }
+
     - give the class answer 25 pixels of padding
+     .answer {
+    padding: 25px;
+  }
   */
   </style>
 </head>
@@ -21,12 +31,29 @@
   <section class="assessment">
     <div class="question" id="bash">
       <p class="question-text">
+      <ul>
+        <li>
         Write out the bash commands to
           - create a new directory in your home directory called "titantic"
+        </li>
+        <li>
+          mkdir ./titanic
           - initalize a new git repository inside "titanic"
+            git init
+        </li>
+        <li>
           - create a new file called readme.md
+          touch readme.md
+        </li>
+        <li>
           - add readme.md to git's staging area
+          git add .
+        </li>
+        <li>
           - commit the work to git
+          git commit -m 'readme'
+        </li>
+      </ul>
       </p>
       <code class="answer">
 
@@ -41,8 +68,19 @@
   <script>
     // JavaScript
     // Create an array containing a string, a boolean, and a number
+    var array = ["string", true, 5];
+
     // Loop through the list and console.log each
+    for(var i = 0; i < array.length; i++) {
+      console.log([i]);
+    }
     // Create an object with key value pairs for your name, former occupation and age
+    var object = {
+      name : "Carlos",
+      former_occupation : "designer",
+      age : 36,
+    }
+    var here = object;
     // assign the object to a variable
   </script>
 </body>
