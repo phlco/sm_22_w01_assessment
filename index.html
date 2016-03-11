@@ -6,8 +6,17 @@
   /* CSS */
   /*   Write CSS here to
     - make the class instructions have a pink background
+    .instructions {
+      background: pink;
+    }
     - make the class question-text have red text
+    .question {
+      color: red;
+    }
     - give the class answer 25 pixels of padding
+    .answer {
+      padding: 25px;
+    }
   */
   </style>
 </head>
@@ -21,15 +30,27 @@
   <section class="assessment">
     <div class="question" id="bash">
       <p class="question-text">
+       <h2>Question</h2> 
         Write out the bash commands to
-          - create a new directory in your home directory called "titantic"
-          - initalize a new git repository inside "titanic"
-          - create a new file called readme.md
-          - add readme.md to git's staging area
-          - commit the work to git
+        <ul>
+          <li> create a new directory in your home directory called "titantic"</li>
+          <li> initalize a new git repository inside "titanic"</li>
+          <li> create a new file called readme.md</li>
+          <li> add readme.md to git's staging area</li>
+          <li> commit the work to git</li>
+        </ul>
       </p>
       <code class="answer">
-
+        <h2>Answer</h2>
+        <p>If you're not in your home directory, type "cd ~", or just "cd"</p>
+        <p>Answers correspond directly to the points above</p>
+          <ul>
+            <li>Type "mkdir titanic" in the command line</li>
+            <li>Go into your "titanic" folder (cd titanic), once there type "git init"</li>
+            <li>In the "titanic" folder, type "touch readme.md"</li>
+            <li>Type "git add readme.md"</li>
+            <li>Type 'git commit -m"A short message detailing what you done"'</li>
+          </ul>
       </code>
     </div>
     <div class="question" id="bash">
@@ -41,9 +62,22 @@
   <script>
     // JavaScript
     // Create an array containing a string, a boolean, and a number
+    var array = ["String", 6]
+    //I think boolean is written in the  "array.string.number" format
+
     // Loop through the list and console.log each
+    //Can't remember the command, but here is the format:
+    [var = i; i < array.length; i++]
+    console.log(array[i]) // Pretty sure this is wrong ...
+
     // Create an object with key value pairs for your name, former occupation and age
+    var = Sean {
+      Name : Sean,
+      Former_Occupation : Sales,
+      Age : 34,
+    }
     // assign the object to a variable
+    // Nope ;)
   </script>
 </body>
 </html>
