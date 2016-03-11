@@ -3,6 +3,12 @@
 <head>
   <title></title>
   <style>
+  body {
+    background: pink;
+    color: red;
+    padding: 25px;
+  }
+
   /* CSS */
   /*   Write CSS here to
     - make the class instructions have a pink background
@@ -21,15 +27,25 @@
   <section class="assessment">
     <div class="question" id="bash">
       <p class="question-text">
-        Write out the bash commands to
-          - create a new directory in your home directory called "titantic"
-          - initalize a new git repository inside "titanic"
-          - create a new file called readme.md
-          - add readme.md to git's staging area
-          - commit the work to git
+
+        <h1>Write out the bash commands to</h1>
+        <ol>
+          <li>create a new directory in your home directory called "titantic"</li>
+          <li>initalize a new git repository inside "titanic"</li>
+          <li>create a new file called readme.md</li>
+          <li>add readme.md to git's staging area</li>
+          <li>commit the work to git</li>
+        </ol>
+
+
       </p>
       <code class="answer">
-
+        mkdir titantic
+        cd titantic/
+        git init
+        touch readme.md
+        git add .
+        git commit -m 'adding file'
       </code>
     </div>
     <div class="question" id="bash">
@@ -39,6 +55,23 @@
     </div>
   </section>
   <script>
+
+var myString = ['string', 24, 9>8]
+//i couldn't exactly remember the boolean format here, but i know it's something that evaluates
+//to true or false//
+  for (var i = 0; i >= 5; i++) {
+    console.log();
+  }
+
+//i'm getting stuck on remembering the syntax for creating loops, i think
+//i know what result i want but have a hard time writing it out//
+
+var aboutMe {
+  Name: 'Allie',
+  Occupation: 'Student',
+  Age: 24,
+}
+
     // JavaScript
     // Create an array containing a string, a boolean, and a number
     // Loop through the list and console.log each
