@@ -6,8 +6,17 @@
   /* CSS */
   /*   Write CSS here to
     - make the class instructions have a pink background
+    body {
+  background: pink;
+    };
     - make the class question-text have red text
+    .question-text {
+  text color: red;
+    }
     - give the class answer 25 pixels of padding
+    .answer {
+padding: 25px;
+    }
   */
   </style>
 </head>
@@ -21,12 +30,30 @@
   <section class="assessment">
     <div class="question" id="bash">
       <p class="question-text">
-        Write out the bash commands to
-          - create a new directory in your home directory called "titantic"
-          - initalize a new git repository inside "titanic"
-          - create a new file called readme.md
-          - add readme.md to git's staging area
-          - commit the work to git
+       <ol> <h1>Write out the bash commands to </h1>
+          <li>create a new directory in your home directory called "titantic"</li>
+             <ol>
+              <li>mk dir titanic</li>
+              </ol>
+          <li>initalize a new git repository inside "titanic"</li>
+               <ol>
+                <li>git init /titanic or</li>
+                <li>cd titanic</li>
+                <li>git init titanic</li>
+                </ol>
+          <li>create a new file called readme.md</li>
+                <ol>
+                <li>touch readme.md</li>
+                </ol>
+          <li>add readme.md to git's staging area</li>
+              <ol>
+              <li>git add readme.md</li>
+              </ol>
+          <li>commit the work to git</li>
+              <ol>
+              <li>git commit -m "inital commit"</li>
+              </ol>
+        </ol>
       </p>
       <code class="answer">
 
@@ -41,9 +68,19 @@
   <script>
     // JavaScript
     // Create an array containing a string, a boolean, and a number
+    var array = ['hi', true, 4]
     // Loop through the list and console.log each
+    for (var i = 0; i < array.length; i++) {
+      console.log([i]);
+    }
     // Create an object with key value pairs for your name, former occupation and age
+      var me = {
+        name: "Christina",
+        former occupation: "Operations Manager",
+        age: 30
+      }
     // assign the object to a variable
+
   </script>
 </body>
 </html>
