@@ -2,6 +2,9 @@
 <html>
 <head>
   <title></title>
+  <style type="text/css" media="screen">
+
+  </style>
   <style>
   /* CSS */
   /*   Write CSS here to
@@ -9,6 +12,17 @@
     - make the class question-text have red text
     - give the class answer 25 pixels of padding
   */
+  .instruction {
+    background: pink,
+  }
+
+  .question-text {
+    color: red,
+  }
+
+  .answer {
+    padding: 25px
+  }
   </style>
 </head>
 <body>
@@ -29,21 +43,51 @@
           - commit the work to git
       </p>
       <code class="answer">
-
+      <p>
+        cd ~
+        mkdir titanic
+        cd titanic
+        git init
+        touch readme.md
+        git add
+        git commit -m "Made titanic"
+      </p>
       </code>
     </div>
     <div class="question" id="bash">
       <p class="question-text">
         Use HTML to Rewrite and format the above question text in <code>div#bash</code> as an ordered list.
+        <ol>
+          <li>cd ~</li>
+          <li>mkdir titanic</li>
+          <li>cd titanic</li>
+          <li>git init</li>
+          <li>touch readme.md</li>
+          <li>git add</li>
+          <li>git commit -m "Made titanic"</li>
+
+        </ol>
       </p>
     </div>
   </section>
-  <script>
-    // JavaScript
-    // Create an array containing a string, a boolean, and a number
-    // Loop through the list and console.log each
-    // Create an object with key value pairs for your name, former occupation and age
-    // assign the object to a variable
+  <script type="text/javascript">
+    var arrayOfStuff = ["Hello", true, 4]
+    for(var i = 0; i < arrayOfStuff; i++){
+      console.log(arrayOfStuff[i])
+      var me = {
+        name: "Ahmed",
+        previousJob: "QualityControl chemist",
+        age: 24
+      }
+    }
   </script>
+
+<!-- // JavaScript
+// Create an array containing a string, a boolean, and a number
+// Loop through the list and console.log each
+// Create an object with key value pairs for your name, former occupation and age
+// assign the object to a variable
+ -->
+
 </body>
 </html>
