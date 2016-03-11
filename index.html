@@ -6,8 +6,13 @@
   /* CSS */
   /*   Write CSS here to
     - make the class instructions have a pink background
+    background: "pink";
     - make the class question-text have red text
+    .question = text:"red"
     - give the class answer 25 pixels of padding
+    .answer = padding: 25px;
+
+    //I need css practice:(//;
   */
   </style>
 </head>
@@ -21,15 +26,21 @@
   <section class="assessment">
     <div class="question" id="bash">
       <p class="question-text">
-        Write out the bash commands to
-          - create a new directory in your home directory called "titantic"
-          - initalize a new git repository inside "titanic"
-          - create a new file called readme.md
-          - add readme.md to git's staging area
-          - commit the work to git
+        <ol> Write out the bash commands to
+          <li>- create a new directory in your home directory called "titantic"</li>
+          <li>- initalize a new git repository inside "titanic"</li>
+          <li> - create a new file called readme.md</li>
+          <li>  - add readme.md to git's staging area</li>
+          <li>   - commit the work to git</li>
+        </ol> Write out the bash commands to
       </p>
       <code class="answer">
-
+      mkdir cd ~/titanic
+      cd titanic
+      git init
+      touch readme.md
+      git add .
+      git commit -m "first commit"
       </code>
     </div>
     <div class="question" id="bash">
@@ -41,9 +52,20 @@
   <script>
     // JavaScript
     // Create an array containing a string, a boolean, and a number
+    array = ["Hi", true, 25]
     // Loop through the list and console.log each
+    for(i=0; i<array.length; i++){
+      console.log(array[i]);
+    }
     // Create an object with key value pairs for your name, former occupation and age
+    me = {
+      name: "Mari",
+      formerOccupation: "civil/environmental engineer",
+      age: 29
+    }
     // assign the object to a variable
+    var aboutMe = me;
+    console.log(aboutMe);
   </script>
 </body>
 </html>
