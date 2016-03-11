@@ -3,12 +3,23 @@
 <head>
   <title></title>
   <style>
+  .instructions {
+    background: pink;
+  }
+  .question-text {
+    color: red;
+  }
+  .answer {
+    padding: 25px;
+  }
+  }
   /* CSS */
   /*   Write CSS here to
     - make the class instructions have a pink background
     - make the class question-text have red text
     - give the class answer 25 pixels of padding
   */
+
   </style>
 </head>
 <body>
@@ -22,13 +33,20 @@
     <div class="question" id="bash">
       <p class="question-text">
         Write out the bash commands to
-          - create a new directory in your home directory called "titantic"
-          - initalize a new git repository inside "titanic"
-          - create a new file called readme.md
-          - add readme.md to git's staging area
-          - commit the work to git
+        <ol>
+          <li> create a new directory in your home directory called "titantic"</li>
+          <li>initalize a new git repository inside "titanic"</li>
+          <li>create a new file called readme.md</li>
+          <li>add readme.md to git's staging area</li>
+          <li>commit the work to git</li>
       </p>
       <code class="answer">
+      cd ~
+      mkdir titanic
+      git init
+      touch readme.md
+      add readme.md
+      git commit -m "new commit"
 
       </code>
     </div>
@@ -39,6 +57,19 @@
     </div>
   </section>
   <script>
+  var array = ["Hello", 1321, true]
+  for (var i=0; i < array.length; i++) {
+    console.log(array[i])
+  }
+
+  var Singh= {
+    firstName: "Gagandeep",
+    lastName: "Singh",
+    FormerOccupation: "Sales Consultant",
+    age: 23,
+  }
+
+
     // JavaScript
     // Create an array containing a string, a boolean, and a number
     // Loop through the list and console.log each
