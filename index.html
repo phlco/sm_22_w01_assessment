@@ -3,6 +3,18 @@
 <head>
   <title></title>
   <style>
+
+  .instructions{
+    background:pink;
+  }
+  .questions{
+    color:red;
+  }
+  .answer{
+    padding: 25px
+
+  }
+
   /* CSS */
   /*   Write CSS here to
     - make the class instructions have a pink background
@@ -21,12 +33,21 @@
   <section class="assessment">
     <div class="question" id="bash">
       <p class="question-text">
+
+
         Write out the bash commands to
-          - create a new directory in your home directory called "titantic"
-          - initalize a new git repository inside "titanic"
-          - create a new file called readme.md
-          - add readme.md to git's staging area
-          - commit the work to git
+        <ol>
+          <li>- create a new directory in your home directory called "titantic"</li>
+           <li> * touch ~/titantic </li>
+          <li>- initalize a new git repository inside "titanic"</li>
+          <li>*git init</li>
+         <li> - create a new file called readme.md</li>
+         <li> *touch read.md</li>
+         <li> - add readme.md to git's staging area</li>
+         <li> * git add read.md</li>
+         <li> - commit the work to git</li>
+         <li> * git commit -m "Git commited"</li>
+         </ol>
       </p>
       <code class="answer">
 
@@ -39,11 +60,26 @@
     </div>
   </section>
   <script>
+
     // JavaScript
     // Create an array containing a string, a boolean, and a number
+    var array = ['string',true,1]
     // Loop through the list and console.log each
+    for(i=0;i<array.length; i++ ){
+      console.log(array[i])
+    }
     // Create an object with key value pairs for your name, former occupation and age
+
+    var objectkeyvaluepairs ={
+      Key:value,
+      occupation:job1,
+      age:99
+    }
     // assign the object to a variable
+
+    var objectkeyvaluepairs = var nameisilya
+
+
   </script>
 </body>
 </html>
